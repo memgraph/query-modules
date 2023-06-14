@@ -118,7 +118,7 @@ void runMultiPhaseColoring(graph *G, long *C_orig, int coloring, int numColors, 
             totItr += tmpItr;
             nonColor = true;
         }
-        //Renumber the clusters contiguiously
+        //Renumber the clusters contiguously
         numClusters = renumberClustersContiguously(C, G->numVertices);
 
         //Keep track of clusters in C_orig

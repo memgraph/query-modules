@@ -87,7 +87,7 @@ void runMultiPhaseBasicDirected(graph *G, long *C_orig, int basicOpt, long minGr
         totTimeClustering += tmpTime;
         totItr += tmpItr;
         
-        //Renumber the clusters contiguiously
+        //Renumber the clusters contiguously
         numClusters = renumberClustersContiguously(C, G->numVertices);
         
         //Keep track of clusters in C_orig
@@ -186,7 +186,7 @@ void runMultiPhaseBasicOnceDirected(graph *G, long *C_orig, int basicOpt, long m
         totTimeClustering += tmpTime;
         totItr += tmpItr;
         
-        //Renumber the clusters contiguiously
+        //Renumber the clusters contiguously
         numClusters = renumberClustersContiguously(C, G->numVertices);
         
         //Keep track of clusters in C_orig
