@@ -62,7 +62,7 @@ double parallelLouvianMethodApprox(graph *G, long *C, int nThreads, double Lower
 #endif
   double time1, time2, time3, time4; //For timing purposes  
   double total = 0, totItr = 0;
-  //long percentange = clustering_parameters.percentage;
+  //long percentage = clustering_parameters.percentage;
   long    NV        = G->numVertices;
   long    NS        = G->sVertices;      
   long    NE        = G->numEdges;
@@ -196,7 +196,7 @@ int x = NV*percentage/100;
 		Counter.clear();
         
            }else {
-                         targetCommAss[i]=currCommAss[i];//(int)rand()%(NV*percentange/100);	
+                         targetCommAss[i]=currCommAss[i];//(int)rand()%(NV*percentage/100);	
 		  }
 		//Update
 		if(targetCommAss[i] != currCommAss[i]  && targetCommAss[i] != -1) {

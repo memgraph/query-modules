@@ -87,7 +87,7 @@ std::vector<std::pair<std::uint64_t, double>> CalculatePageRank() {
 
 ///
 ///@brief Creates a route starting from start_id, stores it in walk and updates the walk_index. Route is created via
-/// random walk depending on random number genrator.
+/// random walk depending on random number generator.
 ///
 ///@param graph Graph for route creation
 ///@param start_id Starting node in graph creation
@@ -123,7 +123,7 @@ void CreateRoute(const mg_graph::GraphView<> &graph, std::uint64_t start_id, std
 
 ///
 ///@brief Creates a route starting from start_id, stores it in walk and updates the walk_index. Route is created via
-/// random walk depending on random number genrator.
+/// random walk depending on random number generator.
 ///
 ///@param graph Graph for route creation
 ///@param start_id Starting node in graph creation

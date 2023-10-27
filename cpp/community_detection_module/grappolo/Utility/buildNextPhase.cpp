@@ -93,7 +93,7 @@ double buildNextLevelGraphOpt(graph *Gin, graph *Gout, long *C, long numUniqueCl
     }
 #ifdef PRINT_DETAILED_STATS_
 #endif
-    long percentange = 80;
+    long percentage = 80;
     double time1, time2, TotTime=0; //For timing purposes
     double total = 0, totItr = 0;
     //Pointers into the input graph structure:
@@ -250,7 +250,7 @@ void buildNextLevelGraph(graph *Gin, graph *Gout, long *C, long numUniqueCluster
 #endif
     double time1, time2, time3, time4; //For timing purposes
     double total = 0, totItr = 0;
-    long percentange = 80;
+    long percentage = 80;
     //Pointers into the input graph structure:
     long    NV_in        = Gin->numVertices;
     long    NE_in        = Gin->numEdges;
@@ -411,7 +411,7 @@ long buildCommunityBasedOnVoltages(graph *G, long *Volts, long *C, long *Cvolts)
 //Recursive call for finding neighbors
 inline void Visit(long v, long myCommunity, short *Visited, long *Volts, 
                   long* vtxPtr, edge* vtxInd, long *C) {
-    long adj1 = vtxPtr[v];   //Begining
+    long adj1 = vtxPtr[v];   //Beginning
     long adj2 = vtxPtr[v+1]; //End
     for(long i=adj1; i<adj2; i++) {
         long w = vtxInd[i].tail;
